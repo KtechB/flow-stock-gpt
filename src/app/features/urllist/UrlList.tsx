@@ -1,5 +1,5 @@
 import { DeleteIcon } from '@chakra-ui/icons';
-import { Box, Flex, IconButton } from '@chakra-ui/react';
+import { Box, Flex, IconButton, Stack } from '@chakra-ui/react';
 import React from 'react';
 
 interface UrlListProps {
@@ -12,7 +12,7 @@ const UrlList: React.FC<UrlListProps> = ({ urls, onDelete }) => {
     return <div className="text-gray-500">No urls</div>;
   }
   return (
-    <Box w="full">
+    <Stack w="full" spacing={4}>
       <ul className="list-disc list-inside">
         {urls.map((url, index) => (
           <Box key={index} className="py-2">
@@ -28,7 +28,7 @@ const UrlList: React.FC<UrlListProps> = ({ urls, onDelete }) => {
           </Box>
         ))}
       </ul>
-    </Box>
+    </Stack>
   );
 };
 
