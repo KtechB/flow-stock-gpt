@@ -22,16 +22,22 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.7.1",
     "@eduardoac-skimlinks/webext-redux": "3.0.1-release-candidate",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@extend-chrome/storage": "^1.5.0",
     "@reduxjs/toolkit": "^1.9.5",
+    "@twind/core": "^1.1.3",
+    "@twind/preset-autoprefix": "^1.0.7",
+    "@twind/preset-tailwind": "^1.1.4",
+    "framer-motion": "^10.12.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "^8.1.0",
     "redux-persist-webextension-storage": "^1.0.2",
     "reduxjs-toolkit-persist": "^7.2.1",
-    "@twind/core": "^1.1.3",
-    "@twind/preset-autoprefix": "^1.0.7",
-    "@twind/preset-tailwind": "^1.1.4",
     "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
@@ -75,5 +81,9 @@
   },
   "simple-git-hooks": {
     "pre-commit": "./node_modules/.bin/nano-staged"
+  },
+  "volta": {
+    "node": "18.15.0",
+    "yarn": "1.22.17"
   }
 }
